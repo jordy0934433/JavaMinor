@@ -14,4 +14,9 @@ public class StringController {
     public String RevertString(@PathVariable("string") String string){
         return stringService.Revert(string);
     }
+
+    @RequestMapping("/count/{string}")
+    public int CountWords(@PathVariable("string") String string){
+        return stringService.Count(string);
+    }
 }
