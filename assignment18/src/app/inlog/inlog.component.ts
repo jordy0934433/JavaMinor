@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inlog.component.css']
 })
 export class InlogComponent implements OnInit {
+  notPossible: string;
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  logIn(): void {
+    this.notPossible = 'Niet mogelijk';
+  }
 }
